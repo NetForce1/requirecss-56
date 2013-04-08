@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page 1</title>
+        <script type="text/javascript">
+        	var require = {
+        		baseUrl: 'js/lib',
+				deps: ['config'],
+				callback: function(config) {
+					require(['app/module1'], function(module1) {
+						console.log('m1 loaded');
+					});
+				}
+			};
+        </script>
+        <script src="js/lib/require/2.1.5/require.js"></script>
+    </head>
+    <body>
+        test
+    </body>
+</html>
